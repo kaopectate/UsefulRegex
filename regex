@@ -1,0 +1,6 @@
+[regex]$URL = '\b(?:(?:https?|ftp|file)://|www\.|ftp\.)(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|[-A-Z0-9+&@#/%=~_|$?!:,.])*(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|[A-Z0-9+&@#/%=~_|$])'
+[regex]$url2 = '(http[s]?|[s]?ftp[s]?)(:\/\/)([^\s,]+)'
+[regex]$scriptTag = '/(<|%3C)script[\s\S]*?(>|%3E)[\s\S]*?(<|%3C)(\/|%2F)script[\s\S]*?(>|%3E)/gi'
+[regex]$base64 = '^([A-Za-z0-9+\/]{4})*([A-Za-z0-9+\/]{4}|[A-Za-z0-9+\/]{3}=|[A-Za-z0-9+\/]{2}==)$'
+[regex]$htmlEntity = '\d\;\&\#\d' 
+[regex]$escapedJavaScript ='%[0-F][0-F]'
